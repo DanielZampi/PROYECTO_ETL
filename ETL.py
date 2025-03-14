@@ -98,8 +98,8 @@ else:
 if media_data:
     df_media = pd.DataFrame(media_data)
     df_media["timestamp"] = pd.to_datetime(df_media["timestamp"])
-    df_media.to_csv("instagram_media_raw.csv", index=False)
-    print("Publicaciones guardadas en 'instagram_media_raw.csv'")
+    df_media.to_csv("instagram_media.csv", index=False)
+    print("Publicaciones guardadas en 'instagram_media.csv'")
 else:
     print("No se guardaron datos.")
 
